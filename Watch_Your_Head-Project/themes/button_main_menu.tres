@@ -1,0 +1,59 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://ssjerfg2xc3u"]
+
+[ext_resource type="FontFile" uid="uid://dwpthwfxoto5t" path="res://fonts/ThaleahFat.ttf" id="1_clkhd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rr1tt"]
+bg_color = Color(1, 0.513726, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0, 0, 0, 0.333333)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_clkhd"]
+bg_color = Color(1, 0.513726, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0, 0, 0, 0.333333)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nb4wq"]
+bg_color = Color(1, 0.513726, 0, 0.686275)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0, 0, 0, 0.415686)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 3
+Button/font_sizes/font_size = 48
+Button/fonts/font = ExtResource("1_clkhd")
+Button/styles/hover = SubResource("StyleBoxFlat_rr1tt")
+Button/styles/normal = SubResource("StyleBoxFlat_clkhd")
+Button/styles/pressed = SubResource("StyleBoxFlat_nb4wq")

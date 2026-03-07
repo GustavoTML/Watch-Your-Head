@@ -1,0 +1,159 @@
+[gd_scene load_steps=9 format=3 uid="uid://bqnq6i41mp3gk"]
+
+[ext_resource type="Texture2D" uid="uid://du2jj7lgt8iiu" path="res://assets/ui/buttons/MediumArrow-Left@4x.png" id="1_lqjgl"]
+[ext_resource type="Script" uid="uid://r8pkcjvaa201" path="res://menus/mobile_controls/mobile_controls.gd" id="1_p1l1r"]
+[ext_resource type="Texture2D" uid="uid://bf3wbu72yxs8k" path="res://assets/ui/buttons/MediumArrow-Right@4x.png" id="2_p1l1r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tu00f"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x48gn"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Animation" id="Animation_ti3wr"]
+resource_name = "entry"
+length = 2.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Right/Arrow_Right:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Left/Arrow_Left:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0.313726), Color(1, 1, 1, 0.870588), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_otjl3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Right/Arrow_Right:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.313726)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Left/Arrow_Left:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.313726)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pkn88"]
+_data = {
+&"RESET": SubResource("Animation_otjl3"),
+&"entry": SubResource("Animation_ti3wr")
+}
+
+[node name="Mobile_Controls" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p1l1r")
+
+[node name="Left" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -640.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_tu00f")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tu00f")
+
+[node name="Arrow_Left" type="TextureRect" parent="Left"]
+self_modulate = Color(1, 1, 1, 0.313726)
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 344.0
+offset_top = 224.0
+offset_bottom = -224.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lqjgl")
+
+[node name="Right" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_x48gn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_x48gn")
+
+[node name="Arrow_Right" type="TextureRect" parent="Right"]
+self_modulate = Color(1, 1, 1, 0.313726)
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 224.0
+offset_right = -336.0
+offset_bottom = -224.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_p1l1r")
+
+[node name="Animator" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_pkn88")
+}
+
+[connection signal="button_down" from="Left" to="." method="_on_left_button_down"]
+[connection signal="button_up" from="Left" to="." method="_on_left_button_up"]
+[connection signal="button_down" from="Right" to="." method="_on_right_button_down"]
+[connection signal="button_up" from="Right" to="." method="_on_right_button_up"]

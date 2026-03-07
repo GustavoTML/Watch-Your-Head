@@ -1,0 +1,84 @@
+[gd_scene load_steps=3 format=3 uid="uid://bm026t0omwd6s"]
+
+[ext_resource type="Script" uid="uid://b1n0ix0aud63" path="res://objects/traps/Saw/stair/saw_stair.gd" id="1_lewtl"]
+[ext_resource type="PackedScene" uid="uid://d5jgswe13ugb" path="res://objects/traps/Saw/saw.tscn" id="1_t13qj"]
+
+[node name="saw_stair" type="Node2D"]
+script = ExtResource("1_lewtl")
+
+[node name="Saw" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(304, 64)
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw2" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(400, -32)
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw3" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(496, -128)
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw4" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(592, -224)
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw5" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(688, -320)
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw6" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(784, -416)
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw7" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(880, -512)
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw8" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(400, -1344)
+rotation = 1.5708
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw9" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(496, -1248)
+rotation = 1.5708
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw10" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(592, -1152)
+rotation = 1.5708
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw11" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(688, -1056)
+rotation = 1.5708
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw12" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(784, -960)
+rotation = 1.5708
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw13" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(880, -864)
+rotation = 1.5708
+scale = Vector2(3, 3)
+set_scala = 2.5
+
+[node name="Saw14" parent="." instance=ExtResource("1_t13qj")]
+position = Vector2(976, -768)
+rotation = 1.5708
+scale = Vector2(3, 3)
+set_scala = 2.5
